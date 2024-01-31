@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset id="fieldset2">
+        <legend>Registration Form</legend>
+        <div id="form">
+          <div id="left">
+            <div>
+              <label for="emailID">Email Text Field Validation :</label>
+              <input type="email" id="emailID" placeholder="Enter email id" />
+            </div>
+            <br />
+            <br />
+            <div>
+              <label for="alpha">Alpha Text Field Validation :</label>
+              <input
+                type="text"
+                id="alpha"
+                placeholder="Enter aplha here... "
+              />
+            </div>
+            <br />
+            <div>
+              <label>Radio Field Validation(Gender) :</label>
+              <div class="radioBoxMain">
+                <div class="radioBox">
+                  <input type="radio" id="radio1" name="gender" />
+                  <label for="radio1">Male</label>
+                </div>
+                <div class="radioBox">
+                  <input type="radio" id="radio2" name="gender" />
+                  <label for="radio2">Female</label>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div>
+              <label for="url">URL:</label>
+              <input
+                type="url"
+                id="url"
+                name="url"
+                placeholder="Paste url here..."
+              />
+              <span class="error" id="urlError"></span>
+            </div>
+
+            <br />
+            <div>
+              <label for="TextArea1">Textarea Field Validation</label>
+              <textarea
+                name="TextArea1"
+                id="TextArea1"
+                cols="55"
+                rows="6"
+                placeholder="Enter text here..."
+              ></textarea>
+            </div>
+
+            <div>
+              <label for="file">Image Field Validation :</label>
+              <input type="file" id="file" />
+            </div>
+          </div>
+
+          <div id="right">
+            <div>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter password"
+              />
+              <span class="error" id="passwordError"></span>
+              <input
+                type="button"
+                id="togglePasswordVisibilityBtn"
+                value="Hide/View"
+                onclick="togglePasswordVisibility()"
+              />
+            </div>
+            <div>
+              <label for="phone">Phone Number Field Validation :</label>
+              <div class="phoneInputGroup">
+                <select id="countryCode">
+                  <option value="+91">+91 (India)</option>
+                  <option value="+1">+1 (USA)</option>
+                  <option value="+44">+44 (UK)</option>
+                  <option value="+86">+86 (China)</option>
+                  <option value="+33">+33 (France)</option>
+                  <option value="+49">+49 (Germany)</option>
+                  <option value="+81">+81 (Japan)</option>
+                  <option value="+7">+7 (Russia)</option>
+                  <option value="+61">+61 (Australia)</option>
+                  <option value="+971">+971 (UAE)</option>
+                </select>
+                <input type="tel" id="phone" placeholder="Enter phone number" />
+              </div>
+            </div>
+            <br />
+            <div>
+              <label for="datepicker">Date Picker :</label>
+              <input type="date" id="datepicker" />
+            </div>
+
+            <br />
+            <div>
+              <label for="currency">Currency:</label>
+              <input
+                type="curr"
+                id="currency"
+                name="currency"
+                placeholder="Choose currency"
+              />
+              <span class="error" id="currencyError"></span>
+            </div>
+            <br />
+            <label>Checkbox Field Validation</label>
+            <div class="checkBoxMain">
+              <div class="checkBox">
+                <input type="checkbox" id="checkbox1" />
+                <label for="checkbox1">MERN</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox" id="checkbox2" />
+                <label for="checkbox2">REACT</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox" id="checkbox3" />
+                <label for="checkbox3">BLOCKCHAIN</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox" id="checkbox4" />
+                <label for="checkbox4">NODE</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox" id="checkbox5" />
+                <label for="checkbox5">BA</label>
+              </div>
+            </div>
+            <br />
+            <div>
+              <label for="color">Color Field validation:</label>
+              <input type="color" id="color" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <input type="submit" id="submitButton" value="Submit" />
+        </div>
+      </fieldset>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
